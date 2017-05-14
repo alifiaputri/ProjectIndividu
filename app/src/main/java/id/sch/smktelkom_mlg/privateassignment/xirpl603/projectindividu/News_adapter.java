@@ -38,8 +38,6 @@ public class News_adapter extends RecyclerView.Adapter<News_adapter.ViewHolder> 
         News_list news_list = news_lists.get(position);
         holder.tvjudul.setText(news_list.getJudul());
         holder.tvpopular.setText(news_list.getPopular());
-
-
         Glide
                 .with(context)
                 .load(news_list.getImage())
