@@ -1,4 +1,7 @@
 # ProjectIndividu
+![1](https://s30.postimg.org/nyzi9rfpt/image.jpg)
+![2](https://s10.postimg.org/sjuyqznih/image.jpg)
+![3](https://s18.postimg.org/cpffbzgw9/image.jpg)
 ### Nama    : Alifia Putri Ramadhani
 ### Kelas   : XIRPL6
 ### No      : 03
