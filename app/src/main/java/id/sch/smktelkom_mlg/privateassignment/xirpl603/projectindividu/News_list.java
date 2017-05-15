@@ -8,11 +8,13 @@ public class News_list {
     private String image;
     private String judul;
     private String popular;
+    private String detildeskripsi;
 
     public News_list(String image, String judul, String popular) {
         this.image = image;
         this.judul = judul;
         this.popular = popular;
+        this.detildeskripsi = detildeskripsi;
     }
 
     public String getImage() {
@@ -27,4 +29,7 @@ public class News_list {
         return popular;
     }
 
+    public String getDetildeskripsi() {
+        return detildeskripsi;
+    }
 }
