@@ -1,6 +1,7 @@
 package id.sch.smktelkom_mlg.privateassignment.xirpl603.projectindividu;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,7 +36,7 @@ public class News_adapter extends RecyclerView.Adapter<News_adapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        News_list news_list = news_lists.get(position);
+        final News_list news_list = news_lists.get(position);
         holder.tvjudul.setText(news_list.getJudul());
         holder.tvpopular.setText(news_list.getPopular());
         Glide
@@ -43,7 +44,19 @@ public class News_adapter extends RecyclerView.Adapter<News_adapter.ViewHolder> 
                 .load(news_list.getImage())
                 .into(holder.ivimage);
 
+        holder.tvjudul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, DetilActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                intent.putExtra("image", news_list.getImage());
+                intent.putExtra("oleh", news_list.getPopular());
+                intent.putExtra("detildeskripsi", news_list.getDetildeskripsi());
+                context.startActivity(intent);
+            }
+        });
     }
+
 
     @Override
     public int getItemCount() {
@@ -63,7 +76,6 @@ public class News_adapter extends RecyclerView.Adapter<News_adapter.ViewHolder> 
             ivimage = (ImageView) itemView.findViewById(R.id.imageView);
             tvjudul = (TextView) itemView.findViewById(R.id.textViewJudul);
             tvpopular = (TextView) itemView.findViewById(R.id.textViewPopular);
-
         }
     }
 }

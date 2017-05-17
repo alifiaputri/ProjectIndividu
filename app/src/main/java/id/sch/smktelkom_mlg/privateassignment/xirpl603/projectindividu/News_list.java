@@ -10,7 +10,7 @@ public class News_list {
     private String popular;
     private String detildeskripsi;
 
-    public News_list(String image, String judul, String popular) {
+    public News_list(String image, String judul, String popular, String detildeskripsi) {
         this.image = image;
         this.judul = judul;
         this.popular = popular;

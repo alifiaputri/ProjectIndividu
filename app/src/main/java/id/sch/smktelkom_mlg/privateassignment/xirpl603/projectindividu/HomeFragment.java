@@ -79,7 +79,8 @@ public class HomeFragment extends Fragment {
                                 News_list item = new News_list(
                                         o.getJSONObject("multimedia").getString("src"),
                                         o.getString("display_title"),
-                                        o.getString("byline")
+                                        o.getString("byline"),
+                                        o.getString("summary_short")
                                 );
                                 news_lists.add(item);
                             }
