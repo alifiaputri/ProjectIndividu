@@ -7,6 +7,8 @@
 <h1> Link APK </h1>
 <p> https://drive.google.com/file/d/0BycZZguS7hJ9dllWR3U0VFpqcFE/view?usp=sharing <p>
 
+<p> https://drive.google.com/open?id=0BycZZguS7hJ9dllWR3U0VFpqcFE   (apk versi 2 ada database)  <p>
+
 <h1> API Yang digunakan </h1>
 <p> New York Times : https://developer.nytimes.com/ </p>
 
